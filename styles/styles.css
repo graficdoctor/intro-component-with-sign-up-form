@@ -131,6 +131,13 @@ span {
   margin-bottom: 0.5rem;
 }
 
+.btn:hover,
+.btn:focus {
+  border-radius: 100px;
+  color: var(--clr-neutral-01);
+  box-shadow: none;
+}
+
 /* Media Queries */
 @media only screen and (min-width: 375px) {
   body {
