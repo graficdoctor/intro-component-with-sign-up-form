@@ -1,0 +1,176 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --clr-primary-01: hsl(0, 100%, 74%);
+  --clr-primary-02: hsl(154, 59%, 51%);
+  --clr-accent-01: hsl(248, 32%, 49%);
+  --clr-neutral-01: hsl(249, 10%, 26%);
+  --clr-neutral-02: hsl(246, 25%, 77%);
+  --clr-white: #fff;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-image: url('../images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--clr-primary-01);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  width: 90%;
+  margin: 0em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+/* Global Classes */
+
+/* Introduction */
+.introduction {
+  margin-bottom: 4.5em;
+}
+
+.introduction__text {
+  max-width: 500px;
+  width: 100%;
+}
+
+.introduction__text p {
+  margin-top: 2em;
+}
+
+/* Form */
+.calltoaction {
+  background-color: var(--clr-accent-01);
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  margin-bottom: 1.5em;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  /* width: 100%; */
+}
+
+span {
+  font-weight: 700;
+}
+
+.form {
+  border-radius: 10px;
+  background-color: var(--clr-white);
+  width: 100%;
+  padding: 1.5em;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  padding: 1.3rem;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #3d3b48;
+}
+
+.disclaimer {
+  color: var(--clr-neutral-02);
+  font-size: 0.6875rem;
+}
+
+.disclaimer a {
+  font-weight: 500;
+  color: var(--clr-primary-01);
+  text-decoration: none;
+}
+
+/* Button */
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  padding: 1.3em;
+  background-color: var(--clr-primary-02);
+  border-radius: 5px;
+  border: transparent;
+  color: white;
+  width: 100%;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 375px) {
+  body {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1140px;
+  }
+  .introduction {
+    text-align: left;
+  }
+  .introduction__text {
+    max-width: 525px;
+    margin-right: 3rem;
+  }
+  .introduction__text h1 {
+    font-size: 3rem;
+    line-height: 55px;
+  }
+  .introduction__text p {
+    line-height: 26px;
+  }
+  .triggeruser {
+    width: 525px;
+  }
+}
+
+/* Front End Mentor */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
